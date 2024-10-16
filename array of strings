@@ -1,0 +1,21 @@
+#include "stdio.h"
+#include "string.h"
+
+void main()
+{
+    int n;
+    char a[10][10];
+
+    printf("Enter the number of strings you want to enter: ");
+    scanf("%d", &n);
+
+    for(int i = 0; i < n; i++)
+    {
+        gets(a[i]);
+    }
+
+    for(int i = 0; i < n; i++)
+    {
+        printf("%s\n", a[i]);
+    }
+}
